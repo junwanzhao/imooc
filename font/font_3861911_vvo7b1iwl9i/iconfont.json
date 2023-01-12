@@ -1,0 +1,16 @@
+{
+  "id": "3861911",
+  "name": "imooc",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12561898",
+      "name": "铃铛",
+      "font_class": "lingdang",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    }
+  ]
+}
