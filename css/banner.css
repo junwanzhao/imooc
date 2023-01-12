@@ -1,16 +1,18 @@
 /* banner 整体布局开始 */
 #banner {
   padding: 32px 0;
+  /* background-color: #ccc; */
+  /* transition: 1s; */
 }
 
 .banner-box {
   height: 482px;
-  background-color: #93b4df;
+  /* background-color: #93b4df; */
 }
 
 .g-banner {
-  height: 32px;
-  background-color: #f38e8e;
+  height: 382px;
+  /* background-color: #f38e8e; */
 }
 
 .course-list {
@@ -18,16 +20,79 @@
   height: 382px;
   background-color: #39364d;
   color: #fff;
+  border-radius: 8px 0 0 0;
 }
 
 .swiper {
   width: 896px;
   height: 382px;
+  /* background-color: rgb(226, 192, 192); */
+  border-radius: 0 8px 0 0;
 }
 
 .sys-class {
   height: 100px;
   background-color: #e1d5d5;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 /30%);
 }
 
 /* banner 整体布局结束 */
+
+/* 课程分列列表开始 */
+.course-list ul {
+  margin-top: 20px;
+}
+
+.course-list li {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.course-list li:hover {
+  background: rgba(255, 255, 255, .1);
+  cursor: pointer;
+}
+
+.course-list .title {
+  font-size: 14px;
+}
+
+.course-list .sub-title {
+  font-size: 12px;
+}
+
+.course-list .iconfont {
+  float: right;
+  font-size: 10px;
+  color: rgba(255, 255, 255, .5);
+}
+
+/* 课程分列列表结束 */
+/* 轮播图 */
+.swiper a {
+  display: block;
+  width: 896px;
+  height: 382px;
+  background-image: url(../images/swiper/swiper-1.jpg);
+  background-size: 896px;
+  border-radius: 0 8px 0 0;
+}
+
+/* 左右切换按钮 */
+.swiper .arrow {
+  position: absolute;
+  /* 垂直居中：离顶部50%，自身高度的一半 */
+  top: 50%;
+  margin-top: -24px;
+  width: 48px;
+  height: 48px;
+  /* 同时设计背景色 ，背景图，背景图位置，尺寸*/
+  background: rgba(28, 31, 33, .2) url(../images/icon-left-small.png) no-repeat center/16px auto;
+  border-radius: 50%;
+  color: #fff;
+
+}
+
+.swiper {}
