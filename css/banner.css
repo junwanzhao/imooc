@@ -1,0 +1,33 @@
+/* banner 整体布局开始 */
+#banner {
+  padding: 32px 0;
+}
+
+.banner-box {
+  height: 482px;
+  background-color: #93b4df;
+}
+
+.g-banner {
+  height: 32px;
+  background-color: #f38e8e;
+}
+
+.course-list {
+  width: 256px;
+  height: 382px;
+  background-color: #39364d;
+  color: #fff;
+}
+
+.swiper {
+  width: 896px;
+  height: 382px;
+}
+
+.sys-class {
+  height: 100px;
+  background-color: #e1d5d5;
+}
+
+/* banner 整体布局结束 */
