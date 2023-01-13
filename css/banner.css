@@ -9,6 +9,8 @@
 .banner-box {
   height: 482px;
   /* background-color: #93b4df; */
+  /* background-image:url(../images/swiper/bj-1.jpg);
+  background-size: 896px; */
 }
 
 .g-banner {
@@ -132,6 +134,7 @@
   margin-left: 8px;
   border-radius: 4px;
   background: rgba(255, 255, 255, .75);
+  cursor: pointer;
   transition: all .2s;
 }
 
