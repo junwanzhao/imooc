@@ -37,7 +37,7 @@
 
 .sys-class {
   height: 100px;
-  background-color: #e1d5d5;
+  /* background-color: #e1d5d5; */
   border-radius: 0 0 8px 8px;
   box-shadow: 0 5px 20px 0 rgb(0 0 0 /30%);
   padding: 25px 0;
@@ -142,4 +142,65 @@
 
 .circle-list li.current {
   width: 20px;
+}
+
+/* 下方体系课 */
+.sys-icon-box {
+  display: inline-block;
+  padding: 0 16px;
+  background: #fff;
+  margin-left: 15px;
+}
+
+.sys-icon-box .sys-icon {
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.sys-icon-box .title:hover h4 {
+  color: #ec1500;
+}
+
+.sys-icon-box h4 {
+  font-size: 14px;
+}
+
+.sys-icon-box p {
+  font-size: 12px;
+}
+
+.sys-class .line {
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background-color: #e8e8e8;
+  ;
+}
+
+.sys-class a:hover {
+  cursor: pointer;
+}
+
+.sys-class .more-btn {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+.sys-class .more-btn .iconfont {
+  font-size: 12px;
+}
+
+.sys-icon {
+  transition: .2s;
+}
+
+.sys-icon:hover {
+  /* transform:translateY(-2px); */
+  transform: rotate(30deg);
+  opacity: .5;
 }
