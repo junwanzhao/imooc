@@ -55,7 +55,7 @@
 
   // 找到左右切换按钮
   const prevArrow = document.querySelector('.prev');
-  const nextaArrow = document.querySelector('.next');
+  const nextArrow = document.querySelector('.next');
 
   // 获取所有的切换圆点
   const ul = document.querySelector('.circle-list');
@@ -65,8 +65,8 @@
   function changeImg(index) {
     const obj = swiperImgList[index];
     swiperA.style.backgroundImage = `url(${obj.path})`;
-    swiperA.herf = obj.url;
-    banner.style.backgroundImage = `url(${obj.bj})`;
+    swiperA.href = obj.url;
+    banner.style.backgroundImage = `url(${obj.bg})`;
     // 让圆点切换与主图切换同步
     currentCircle(index);
   }
@@ -74,7 +74,7 @@
   // 初始化轮播，显示第一张图
   changeImg(i);
   // 启动定时器
-  timer = setInterva(() => {
+  timer = setInterval(() => {
     i = ++i === 4 ? 0 : i;
     changeImg(i);
   }, 3000);
@@ -96,7 +96,7 @@
     if (flag == false) {
       return;
     }
-    flag = flase;
+    flag = false;
     i = --i == -1 ? 3 : i;
     changeImg(i);
     // 一秒后允许重新点击
@@ -105,11 +105,11 @@
     }, 1000)
   }
 
-  nextaArrow.onclick = function () {
+  nextArrow.onclick = function () {
     if (flag == false) {
       return;
     }
-    flag = flase;
+    flag = false;
     i = ++i == 4 ? 0 : i;
     changeImg(i);
     setTimeout(() => {
@@ -129,7 +129,7 @@
       if (flag == false) {
         return;
       }
-      flag = flase;
+      flag = false;
       changeImg(i);
       setTimeout(() => {
         flag = true;
@@ -142,19 +142,19 @@
     clearInterval(timer);
   }
 
-  // 鼠标离开重新启动定时器
+  // 鼠标离开,重新启动定时器
   swiperA.onmouseleave = function () {
     timer = setInterval(() => {
       i = ++i == 4 ? 0 : i;
       changeImg(i);
-    }, 3000)
+    }, 3000);
   }
 
   prevArrow.onmouseenter = function () {
     clearInterval(timer);
   }
 
-  nextaArrow.onmouseenter = function () {
+  nextArrow.onmouseenter = function () {
     clearInterval(timer);
   }
 
