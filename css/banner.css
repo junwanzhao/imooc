@@ -3,6 +3,7 @@
   padding: 32px 0;
   /* background-color: #ccc; */
   /* transition: 1s; */
+  transition: 1s;
 }
 
 .banner-box {
@@ -28,6 +29,8 @@
   height: 382px;
   /* background-color: rgb(226, 192, 192); */
   border-radius: 0 8px 0 0;
+  /* 父相子绝，内部的切换按钮，圆点就可以绝对定位 */
+  position: relative;
 }
 
 .sys-class {
@@ -78,9 +81,11 @@
   background-image: url(../images/swiper/swiper-1.jpg);
   background-size: 896px;
   border-radius: 0 8px 0 0;
+  /* 1秒内完成切换，过渡效果 */
+  transition: 1s;
 }
 
-/* 左右切换按钮 */
+/* 左右切换按钮开始*/
 .swiper .arrow {
   position: absolute;
   /* 垂直居中：离顶部50%，自身高度的一半 */
@@ -92,7 +97,44 @@
   background: rgba(28, 31, 33, .2) url(../images/icon-left-small.png) no-repeat center/16px auto;
   border-radius: 50%;
   color: #fff;
-
+  transition: .5s;
 }
 
-.swiper {}
+.swiper .arrow:hover {
+  background-color: rgba(28, 31, 33, .5);
+  transition: .5s;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+  /* 右三角使用左三角水平翻转180度即可*/
+  transform: rotate(180deg);
+}
+
+/* 左右切换按钮结束 */
+
+/* 切换圆点 */
+.circle-list {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+}
+
+.circle-list li {
+  cursor: pointer;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, .75);
+  transition: all .2s;
+}
+
+.circle-list li.current {
+  width: 20px;
+}
