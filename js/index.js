@@ -22,24 +22,34 @@
   // 定义轮播图数据
   const swiperImgList = [
     {
-      path: './images/swiper/swiper-1.jpg',
+      path: './images/swiper/1.jpg',
       url: 'https://www.imooc.com/',
-      bg: './images/swiper/bj-1.jpg'
+      bg: './images/swiper/bj-4.jpg'
     },
     {
-      path: './images/swiper/swiper-2.jpg',
-      url: 'https://www.imooc.com/',
-      bg: './images/swiper/bj-2.jpg'
-    },
-    {
-      path: './images/swiper/swiper-3.jpg',
+      path: './images/swiper/2.jpg',
       url: 'https://www.imooc.com/',
       bg: './images/swiper/bj-3.jpg'
     },
     {
-      path: './images/swiper/swiper-4.jpg',
+      path: './images/swiper/3.jpg',
       url: 'https://www.imooc.com/',
       bg: './images/swiper/bj-4.jpg'
+    },
+    {
+      path: './images/swiper/4.jpg',
+      url: 'https://www.imooc.com/',
+      bg: './images/swiper/bj-3.jpg'
+    },
+    {
+      path: './images/swiper/5.jpg',
+      url: 'https://www.imooc.com/',
+      bg: './images/swiper/bj-4.jpg'
+    },
+    {
+      path: './images/swiper/6.jpg',
+      url: 'https://www.imooc.com/',
+      bg: './images/swiper/bj-1.jpg'
     }
 
   ];
@@ -75,7 +85,7 @@
   changeImg(i);
   // 启动定时器
   timer = setInterval(() => {
-    i = ++i === 4 ? 0 : i;
+    i = ++i === 6 ? 0 : i;
     changeImg(i);
   }, 3000);
 
@@ -97,7 +107,7 @@
       return;
     }
     flag = false;
-    i = --i == -1 ? 3 : i;
+    i = --i == -1 ? 5 : i;
     changeImg(i);
     // 一秒后允许重新点击
     setTimeout(() => {
@@ -110,7 +120,7 @@
       return;
     }
     flag = false;
-    i = ++i == 4 ? 0 : i;
+    i = ++i == 6 ? 0 : i;
     changeImg(i);
     setTimeout(() => {
       flag = true;
@@ -145,7 +155,7 @@
   // 鼠标离开,重新启动定时器
   swiperA.onmouseleave = function () {
     timer = setInterval(() => {
-      i = ++i == 4 ? 0 : i;
+      i = ++i == 6 ? 0 : i;
       changeImg(i);
     }, 3000);
   }
@@ -165,3 +175,73 @@
 
 }
 
+// 倒计时
+{
+  // 获取结束时间点的时间戳
+  let endDate = new Date('2023-01-14 15:08:00');
+  endDate = parseInt(endDate.getTime() / 1000);
+  console.log(endDate);
+
+  let timer = null;
+  // 获取页面的时，分，秒标签
+  const hourDom = document.getElementById('hour');
+  const minDom = document.getElementById('min');
+  const secDom = document.getElementById('sec');
+
+  function coundDown() {
+    // 获取此刻当前时间的时间戳
+    let nowDate = new Date();
+    nowDate = parseInt(nowDate.getTime() / 1000);
+    // 计算剩余的总秒数
+    let seconds = endDate - nowDate;
+    // 根据总秒数换算
+    if (seconds >= 0) {
+      let hours = parseInt(seconds / 3600);
+      hours = hours > 9 ? hours : '0' + hours;
+      let mins = parseInt(seconds % 3600 / 60);
+      mins = mins > 9 ? mins : '0' + mins;
+      let secs = seconds % 3600 % 60;
+      secs = secs > 9 ? secs : '0' + secs;
+      console.log(hours, mins, secs);
+
+      // 把结果显示到页面
+      hourDom.innerText = hours;
+      minDom.innerText = mins;
+      secDom.innerText = secs;
+    } else {
+      // 清空计时器
+      clearInterval(timer);
+      document.querySelector('.countdown p').innerText = '拼团已结束';
+      hourDom.innerText = '00';
+      minDom.innerText = '00';
+      secDom.innerText = '00';
+    }
+  }
+  coundDown();
+  // 启动定时器
+  timer = setInterval(() => {
+    coundDown();
+  }, 1000);
+}
+
+// 滚动课程
+{
+  const ul = document.querySelector('.sk-list ul');
+  let timer = null;
+  let leftPx = 0;
+  timer = setInterval(() => {
+    leftPx = --leftPx == -1920 ? 0 : leftPx;
+    ul.style.left = leftPx + 'px';
+  }, 10);
+
+  ul.onmouseenter = function () {
+    clearInterval(timer);
+  }
+
+  ul.onmouseleave= function () {
+    timer = setInterval(() => {
+      leftPx = --leftPx == -1920 ? 0 : leftPx;
+      ul.style.left = leftPx + 'px';
+    }, 10);
+  }
+}
