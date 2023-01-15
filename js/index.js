@@ -249,7 +249,7 @@
 // 课程切换
 {
   // 获取所有的 a 标签（tab 栏）
-  const tabs = document.querySelectorAll('.new-course-box a');
+  const tabs = document.querySelectorAll('.new-course-box h3 a');
   // 获取到所有的课程列表
   const uls = document.querySelectorAll('.new-course-list ul');
 
