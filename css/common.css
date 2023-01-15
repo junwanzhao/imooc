@@ -42,3 +42,11 @@
 .footer {
     height: 200px;
 }
+
+/* 文字截取两行 */
+.ellipsis2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
