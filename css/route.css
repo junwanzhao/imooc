@@ -1,0 +1,196 @@
+/* 进站必学整体布局开始 */
+#route {
+  padding: 32px 0;
+}
+
+.route-box {
+  height: 510px;
+}
+
+.route-box .title {
+  height: 36px;
+}
+
+.route-box .route-list {
+  height: 404px;
+  margin-top: 20px;
+}
+
+/* 进站必学整体布局结束 */
+
+/* 标题栏 */
+.route-box .title {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.route-box .title div.more {
+  color: #6d7278;
+  line-height: 36px;
+  transition: all .2s;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  font-size: large;
+  font-weight: 400;
+}
+
+.route-box .title div.more:hover {
+  color: #474a4d;
+  font-weight: 500;
+}
+
+.route-box .title div span {
+  font-size: large;
+  color: #6d7278;
+}
+
+.route-box .title div.more span:hover {
+  color: #474a4d;
+  font-weight: 500;
+}
+
+.route-box .title img {
+  width: 162px;
+
+}
+
+
+.route-box .title a {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: .3s;
+}
+
+.route-box .title a:hover {
+  color: #ec1500;
+}
+
+.route-box .title .active {
+  border-bottom: 2px solid #ec1500;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+/* 课程列表开始 */
+.route-box .route-list ul {
+  display: none;
+  width: 1176px;
+}
+
+/* 当前选中的类别,显示 */
+.route-box .route-list ul.current {
+  display: block;
+  float: left;
+}
+
+.route-box .route-list ul li {
+  position: relative;
+  float: left;
+  width: 368px;
+  height: 178px;
+  margin: 0 24px 24px 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  transition: all .2s;
+}
+
+.route-box .route-list ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.route-box .route-list ul li img {
+  width: 368px;
+  height: 90px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* .must-study-box .must-study-list ul li a {
+  用于在元素的 ::before 和 ::after 伪元素中插入内容。
+  使用 content 属性插入的内容都是匿名的可替换元素。
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 25px;
+  z-index: 1;
+  background: no-repeat center/100%;
+  background-image: url(../images/icon-new.png);
+} */
+
+/* 
+.new-course-box .new-course-list .img{
+  width: 270px;
+} */
+
+
+.route-box .route-list .title {
+  /* margin-left: 10px;
+  margin-top: 10px; */
+  color: #545C63;
+  font-size: 14px;
+  padding: 0 8px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 368px;
+  box-sizing: border-box;
+  line-height: 20px;
+}
+
+/* 
+.route-box .route-list .difficulty {
+  position: absolute;
+  bottom: 40px;
+  left: 18px;
+  font-size: 12px;
+} */
+
+.route-box .route-list .bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* .bottom .discount {
+  padding: 1px 3px;
+  background-color: rgba(242, 13, 13, .6);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+} */
+
+.bottom .part {
+  font-size: 12px;
+  color: #9199a1;
+  /* color: rgba(242, 13, 13, .6); */
+  /* font-weight: 700; */
+}
+
+.bottom .sc {
+  padding: 0px 10px;
+  font-size: 12px;
+  color: #9199a1;
+  margin-left: 210px;
+  /* margin-right: 220px; */
+  /* right: 10px; */
+}
+
+/* .bottom .origin-price {
+  padding: 2px 0;
+  font-size: 12px;
+  color: #6d7278;
+} */
+
+/* .bottom .delete-line {
+  text-decoration: line-through;
+} */
+/* 
+.bottom .free {
+  font-size: 12px;
+} */
+
+/* 课程列表结束 */
