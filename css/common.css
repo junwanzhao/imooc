@@ -39,10 +39,6 @@
     background-color: #fff;
 }
 
-.footer {
-    height: 200px;
-}
-
 /* 文字截取两行 */
 .ellipsis2 {
     overflow: hidden;

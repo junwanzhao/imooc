@@ -23,3 +23,29 @@
   cursor: pointer;
   transition: .2s;
 }
+
+/* #menu-right {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 50px auto;
+  background-position: -4px 0;
+  padding-top: 102px;
+  border-radius: 8px 0 0 8px;
+  text-align: center;
+  z-index: 100;
+  user-select: none;
+}
+
+#menu-right span.iconfont {
+
+  color: #b5b9bc;
+  font-size: 20px;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: .2s;
+} */
