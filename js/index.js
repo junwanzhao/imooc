@@ -247,7 +247,7 @@
   }
 }
 
-// 课程切换
+// 新上好课，课程切换
 {
   // 获取所有的 a 标签（tab 栏）
   const tabs = document.querySelectorAll('.new-course-box h3 a');
@@ -265,6 +265,28 @@
       // 给当前选中的a和ul添加样式{
       tabs[i].className = 'active';
       uls[i].className = 'current';
+    }
+  }
+}
+
+// 进站必学，课程切换
+{
+  // 获取所有的 a 标签（tab 栏）
+  const tabs = document.querySelectorAll('.must-study-box h3 a ');
+  // 获取到所有的课程列表
+  const uls = document.querySelectorAll('.must-study-list ul');
+
+  for (let m = 0; m < tabs.length; m++) {
+    // 循环为所有的a绑定点击事件
+    tabs[m].onclick = function () {
+      // 清除所有的a和ul的样式
+      for (let n = 0; n < tabs.length; n++) {
+        tabs[n].className = '';
+        uls[n].className = '';
+      }
+      // 给当前选中的a和ul添加样式{
+      tabs[m].className = 'active';
+      uls[m].className = 'current';
     }
   }
 }
