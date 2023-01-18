@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "15463261",
+      "name": "双箭头-右",
+      "font_class": "shuangjiantou-you",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
       "icon_id": "7724938",
       "name": "APP推送",
       "font_class": "APPtuisong",
