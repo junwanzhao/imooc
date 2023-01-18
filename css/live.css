@@ -1,0 +1,141 @@
+/* 慕课直播整体布局开始 */
+#mk-live {
+  padding: 32px 0;
+}
+
+.mk-live-box {
+  height: 374px;
+}
+
+.mk-live-box .title {
+  height: 36px;
+}
+
+.mk-live-box .mk-live-list {
+  /* background-color: aqua; */
+  height: 244px;
+  margin-top: 20px;
+}
+
+.mk-live-box .mk-live-list li {
+  float: left;
+  width: 367px;
+  /* background-color: #fff; */
+}
+
+/* 慕课直播整体布局结束 */
+
+/* 标题栏  */
+
+.mk-live-box .title {
+  padding: 10px;
+  line-height: 32px;
+}
+
+.mk-live-box .title img {
+  width: 162px;
+  height: 30px;
+}
+
+.mk-live-box .title span {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 12px;
+  color: #9199a1;
+  margin-left: 28px;
+  line-height: 16px;
+
+}
+
+/* 直播列表开始  */
+.mk-live-box .mk-live-list li {
+  position: relative;
+  float: left;
+  width: 363px;
+  height: 220px;
+  margin: 0 21px 21px 0;
+  /* background: rgb(138, 59, 59); */
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+  transition: all .2s;
+}
+
+.mk-live-box .mk-live-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.mk-live-box .mk-live-list li img {
+  width: 363px;
+  height: 128px;
+  border-radius: 8px 8px 0 0;
+}
+
+.mk-live-box .mk-live-list p.title {
+  /* position: absolute; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-left: 8px;
+  margin-top: 5px;
+  color: #545C63;
+}
+
+
+
+.mk-live-box .mk-live-box .bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.bottom .iconfont {
+  font-size: 12px;
+  color: #9199a1;
+  line-height: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.bottom .time {
+  font-size: 12px;
+  color: #9199a1;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.bottom .yuyue {
+  width: 92px;
+  height: 24px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #206aff;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  margin-left: 100px;
+
+}
+
+.bottom .huifang {
+  width: 92px;
+  height: 24px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #383d42;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  margin-left: 100px;
+
+}
+
+
+/* 直播列表结束 */

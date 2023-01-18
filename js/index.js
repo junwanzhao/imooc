@@ -17,6 +17,7 @@
     input.placeholder = keyWords[i];
   }, 2000);
 }
+
 // 轮播
 {
   // 定义轮播图数据
