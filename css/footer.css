@@ -1,0 +1,111 @@
+.footer {
+  height: 280px;
+  padding: 32px 0;
+
+}
+
+
+.footer .footer-link {
+  text-align: left;
+  border: none;
+  padding: 0;
+  background-size: cover;
+  display: block;
+}
+
+
+.footer .footer-link a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  color: #545c63;
+  margin-right: 24px;
+  font-weight: 300;
+  outline: 0;
+  text-decoration: none;
+}
+
+.footer .footer-link a:hover {
+  color: #1c1f21;
+}
+
+.footer p {
+  margin: 100px 0;
+  line-height: 1.7;
+  word-break: break-all;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 4px !important;
+  text-align: left;
+  color: #93999f;
+}
+
+.footer p a {
+  line-height: 1.7 !important;
+  font-size: 6px !important;
+  color: #93999f !important;
+  margin: 0 5px !important;
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  text-align: left !important;
+}
+
+.footer p img {
+  width: 18px;
+  height: 18px;
+  display: inline !important;
+  margin: 0 !important;
+  -webkit-user-drag: none;
+  overflow-clip-margin: cotent-box;
+  overflow: clip;
+}
+
+.footer .img {
+  height: 59px;
+  width: 282px;
+  top: 32px;
+}
+
+.footer .left {
+  /* position: absolute; */
+  /* bottom: -20px; */
+  width: 70px;
+  background-size: cover;
+  display: block;
+  float: left;
+  font-size: 14px;
+  color: #545c63;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 300;
+  margin-right: 12px;
+  /* margin-block-start: 1em;
+  bottom: 120px; */
+}
+
+.footer ul {
+  /* bottom: 100px;
+  left: 250px; */
+  float: left;
+  width: 1070px;
+  display: block;
+  /* margin-block-start: 1em; */
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 60px;
+
+}
+
+.footer ul li {
+  float: left;
+  line-height: 28px;
+  margin: 0 24px 12px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
